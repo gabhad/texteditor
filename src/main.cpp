@@ -1,8 +1,11 @@
+#include <ncurses.h>
 #include "textedit.hpp"
-#include <iostream>
 
 int main(void)
 {
-    std::cout << "Ceci est un editeur de texte" << std::endl;
+    initscr();
+    keypad(stdscr, TRUE); 
+    // Main function
+    endwin();
     return 0;
 }
