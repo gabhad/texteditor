@@ -2,13 +2,16 @@
 # define TEXTEDITOR_HPP
 
 #include <ncurses.h>
+#include <stack>
+#include <string>
 #include "Cursor.hpp"
 
 class TextEditor {
 private:
-    int     _lines;
-    int     _cols;
-    Cursor  *_curs;
+    int                     _lines;
+    int                     _cols;
+    Cursor                 *_curs;
+    std::stack<std::string> _lastActions;
 
 public:
     TextEditor(WINDOW *editor);

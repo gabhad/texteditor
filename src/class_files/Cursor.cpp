@@ -12,3 +12,7 @@ Cursor::~Cursor() {}
 
 int Cursor::getX(void) { return _x; }
 int Cursor::getY(void) { return _y; }
+
+
+void Cursor::moveHorizontally(int n) { _x += n; }
+void Cursor::moveVertically(int n) { _y += n; }

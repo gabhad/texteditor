@@ -13,8 +13,12 @@ public:
     ~Cursor();
 
     // Getters
-    int getX(void);
-    int getY(void);
+    int     getX(void);
+    int     getY(void);
+
+    // Move
+    void    moveHorizontally(int n);
+    void    moveVertically(int n);
 };
 
 #endif  // CURSOR_HPP
