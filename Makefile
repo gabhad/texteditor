@@ -2,7 +2,8 @@ CC = g++
 CFLAGS = -g -Wall -Wextra -Werror -std=c++20
 LDFLAGS = -lncurses
 INCLUDES = include/
-SRC = src/main.cpp
+SRC = src/main.cpp 	\
+		src/editor.cpp
 		
 TARGET = texteditor
 

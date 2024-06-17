@@ -5,7 +5,7 @@ int main(void)
 {
     initscr();
     keypad(stdscr, TRUE); 
-    // Main function
+    openEditor();
     endwin();
     return 0;
 }
