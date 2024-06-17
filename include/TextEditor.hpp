@@ -27,6 +27,12 @@ public:
     int     getCols(void);
     int     getCursX(void);
     int     getCursY(void);
+
+    // Move Cursor
+    void    moveCursLeft(void);
+    void    moveCursRight(void);
+    void    moveCursUp(void);
+    void    moveCursDown(void);
 };
 
 #endif  // TEXTEDITOR_HPP

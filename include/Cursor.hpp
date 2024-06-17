@@ -1,6 +1,8 @@
 #ifndef CURSOR_HPP
 # define CURSOR_HPP
 
+#include <ncurses.h>
+
 class Cursor {
 private:
     int _x;

@@ -4,12 +4,11 @@
 void    openEditor() {
     WINDOW *editor = newwin(0, 0, 0, 0);
     TextEditor *textEditor = new TextEditor(editor);
-    echo();
     clear();
     while (1) {
-    //    clear(); // XXX empeche de memoriser l'input
-    //    border('*', '*', '*', '*', '*', '*', '*', '*');
-     //   move(textEditor->getCursX(), textEditor->getCursY());
+        clear(); // XXX empeche de memoriser l'input
+        border('*', '*', '*', '*', '*', '*', '*', '*');
+        move(textEditor->getCursY(), textEditor->getCursX());
         refresh();
         int i = getch();
         if (i == 27)
@@ -17,7 +16,7 @@ void    openEditor() {
             clear();
             break;
         }
-        getInput(i);
+        getInput(textEditor, i);
     }
 
     delwin(editor);
